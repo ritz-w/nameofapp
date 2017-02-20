@@ -1,7 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This README is about the first app I'm going to create! Apparently it's going to be an e-commerce app.
+
+Ritz Wu 
 
 Things you may want to cover:
 
