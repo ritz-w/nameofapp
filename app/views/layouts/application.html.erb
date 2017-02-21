@@ -3,19 +3,40 @@
   <head>
     <title>Nameofapp</title>
     <%= csrf_meta_tags %>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-lg-2">
+          <nav class= "navbar-default navbar-fixed-side">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+              <li><a href="#">About</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">View Artworks <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">By Artist</a></li>
+                  <li><a href="#">By Genre</a></li>
+                  <li><a href="#">By Selection</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">References</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
 
     <%= yield %>
 
