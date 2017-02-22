@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Nameofapp</title>
+    <title>No Shop</title>
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Quicksand|Lora" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     
@@ -37,12 +37,14 @@
         </div>
       </div>
     </div>
-
+  <div class="body">
+    <div class="site-title">
+      <h1 class="part1">NO SHOP</h1>
+    </div>
     <%= yield %>
-
+  </div>
     <footer>
-      &copy; 2015 Bike Berlin
-    </footer>
-
+      &copy; 2017 Ritz Wu
+   </footer>
   </body>
 </html>
