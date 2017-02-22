@@ -6,6 +6,24 @@
   <div class="body">
     	<div class="page-header">
   		<h2>Welcome</h2>
-  			<p>An experimental online shop. Learn about the project here.</p>
-  		  <div class="object-lineup"><%= image_tag("masayoshi_nakajo.jpg", class: "img-responsive my-image") %>  </div>
+  			<p>An experimental online shop. Learn about the project <a href=/static_pages/about#>here.</a></p>
       </div>
+    <div class="row object-lineup">
+      <div class="col-md-4"> 
+        <%= image_tag("masayoshi_nakajo.jpg", class: "img-product") %> 
+        <p class="object-title-text">About Object 1
+        </p>
+      </div>
+      <div class="col-md-4">
+        <%= image_tag("masayoshi2.jpg", class: "img-product") %>
+        <p class="object-title-text">About Object 2
+        </p>
+      </div>
+      <div class="col-md-4">
+        <%= image_tag("masayoshi3.jpg", class: "img-product") %>
+        <p class="object-title-text">About Object 3
+        </p>
+      </div>
+    </div>
+  </div>
+

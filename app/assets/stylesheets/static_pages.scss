@@ -165,7 +165,7 @@ li {
 
 //body styling
 .site-title {
-  width: 200px;
+  width: 240px;
   color: #000;
   margin-left: 30px;
   text-align: center;
@@ -200,7 +200,6 @@ li {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  width: 100%;
   min-height: 40em;
   padding: 10px;
 }
@@ -208,7 +207,7 @@ li {
 .page-header {
   background-color: #f8f8f8;
   background-size: 100% 100%;
-  width: 50%;
+  width: 70%;
   margin-left: -206px;
 }
 
@@ -232,14 +231,29 @@ li {
   font-family: 'Quicksand', sans-serif;
 }
 
-.object-lineup {
-  width: 130px;
-  border-weight: 1px;
-  border-color: #000;
-  border-style: solid;
-  margin: 30px 20px;
+.cart-image {
+  width: 40px;
+  transform: rotate(180deg);
 }
 
+.img-product {
+  width: 200px;
+  border-width: 1px;
+  border-color: #000;
+  border-style: solid;
+  margin: 10px 10px;
+}
+
+.object-lineup{
+  margin-left: -20%;
+}
+
+
+.object-title-text {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  margin-left: -20%;
+}
 footer {
   font-weight: bold;
   text-transform: uppercase;
