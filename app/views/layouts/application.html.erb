@@ -17,29 +17,43 @@
       <div class="row">
         <div class="col-sm-3 col-lg-2">
           <nav class= "navbar-default navbar-fixed-side">
-            <ul class="nav navbar-nav">
-              <li> <%= link_to "Home", static_pages_index_path %> <span class="sr-only"></span></a></li>
-              <li>  <%= link_to "About", static_pages_about_path %></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">View Artworks <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">By Artist</a></li>
-                  <li><a href="#">By Genre</a></li>
-                  <li><a href="#">By Selection</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">References</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li> <%= link_to "Contact", static_pages_contact_path %></li>
-                </ul>
-              </li>
-            </ul>
+            <div class="navbar-header">
+              <div class="mobile-site-title">
+                <%= image_tag("cart.png", class: "img-responsive mobile-icon") %>
+                <p>NO SHOP</p>
+                </div>
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li> <%= link_to "Home", static_pages_index_path %> <span class="sr-only"></span></a></li>
+                <li>  <%= link_to "About", static_pages_about_path %></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">View Artworks <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">By Artist</a></li>
+                    <li><a href="#">By Genre</a></li>
+                    <li><a href="#">By Selection</a></li>
+                  </ul>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">References</a></li>
+                <li role="separator" class="divider"></li>
+                <li> <%= link_to "Contact", static_pages_contact_path %></li>
+                </li>
+              </ul>
+            </div>
           </nav>
         </div>
       </div>
     </div>
-  <div class="body">
-    <div class="site-title">
-      <h1 class="part1">NO SHOP</h1>
+  <div class="content-container" id="mobile-content-container">
+    <div class="site-title" id="desktop-site-title">
+      <h1 class="title-text">NO SHOP</h1>
       <%= image_tag("cart.png", class: "img-responsive cart-image") %>
     </div>
     <%= yield %>

@@ -5,37 +5,11 @@
 
 //navbar styling
 
-.navbar-default {
-  border-style: solid;
-  border-width: 2px;
-  border-color: #000;
-}
-
 li {
   font-family: 'Dosis', sans-serif;
   font-color: #000;
   font-size: 1em;
 }
-
-@media (max-width: 768px) {
-  .navbar-fixed-side {
-      margin-left: -20px;
-      margin-right: -20px;
-  }
-}
-@media (min-width: 768px) {
-  .navbar-fixed-side {
-      position: fixed;
-      margin: 0 -20px;
-      height: 100vh;
-      width: inherit;
-      overflow: auto;
-      border-top-width: 0;
-      border-bottom-width: 0;
-      border-radius: 0;
-      padding: 0px 20px;
-      background-color: #fafaf7;
-  }
 
   .navbar-fixed-side .container,
   .navbar-fixed-side .container-fluid {
@@ -55,7 +29,7 @@ li {
   }
   .navbar-fixed-side .navbar-collapse {
       width: 100%;
-      border-top: 1px solid #000000;
+      border: none;
   }
   .navbar-fixed-side .navbar-nav {
       float: none;
@@ -161,11 +135,85 @@ li {
   .navbar-fixed-side.navbar-inverse .dropdown>.dropdown-toggle {
       color: #777777 !important
   }
+
+
+//navbar mobile styling
+
+.navbar-toggle {
+  margin-top: 1em;
 }
 
+.navbar-toggle .icon-bar:nth-of-type(2) {
+    top: 1px;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(3) {
+    top: 2px;
+}
+
+.navbar-toggle .icon-bar {
+    position: relative;
+    transition: all 500ms ease-in-out;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+    top: 6px;
+    transform: rotate(45deg);
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+    background-color: transparent;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+    top: -6px;
+    transform: rotate(-45deg);
+}
+
+.navbar-header {
+  background-color: #fafaf7;
+}
+
+.mobile-site-title {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  width: 100%;
+  display: inline;
+}
+
+.mobile-site-title p {
+  margin: 1.5em;
+  float:left;
+}
+
+.mobile-icon {
+  width: 3em;
+  transform: rotate(180deg);
+  margin: 1em;
+  float: left;
+}
+
+
 //body styling
+
+body {
+  background-color: #f8f8f8; 
+}
+
+.content-container {
+  margin-left: 206px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 40em;
+  padding: 10px;
+  }
+
 .site-title {
-  width: 240px;
+  width: 300px;
   color: #000;
   margin-left: 30px;
   text-align: center;
@@ -174,34 +222,29 @@ li {
   text-align: left;
   letter-spacing: 3px;
   padding: 5px;
+  font-size: 2em;
 }
 
-.part1 h1 {
-  font-size: 1.8em;
+.title-text h1 {
+  font-size: 10px;
   margin-top: 5px;
   margin-bottom: 5px;
   font-family: sans-serif;
 }
 
-.part2 h1 {
-  font-size: 1.8em;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  font-family: sans-serif;
-  transform:scale(3,1); 
-  -webkit-transform:scale(3S,1);
-  display:inline-block; 
-}
-
-.body {
+.content-container {
   margin-left: 206px;
-  background-color: #f8f8f8; 
+  width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   min-height: 40em;
   padding: 10px;
+}
+
+.page-content {
+  margin-left: 206px;
 }
 
 .page-header {
@@ -254,10 +297,82 @@ li {
   font-family: 'Quicksand', sans-serif;
   margin-left: -20%;
 }
+
 footer {
   font-weight: bold;
   text-transform: uppercase;
   font-family: 'Dosis', sans-serif;
   padding: 5px;
   margin-bottom: 30px;
+} 
+
+//for mobile version
+@media (max-width: 768px) {
+  .navbar-fixed-side {
+      margin-left: -20px;
+      margin-right: -20px;
+      border-bottom: solid;
+      border-width: 2px;
+      border-color: #000000;
+  }
+
+  #desktop-site-title {
+  visibility: hidden;
+  clear: both;
+  float: left;
+  margin: 10px auto 5px 20px;
+  width: 28%;
+  display: none;
+  }
+
+.page-content {
+  margin-left: -206px;
+  width: 100%;
+  background-color: #f8f8f8; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 40em;
+  padding: 10px;
+  }
+
+  .page-header {
+  margin-left: 0;
+  width: 100%;
+  background-color: #f8f8f8; 
+  }
+
+  .object-lineup{
+    text-align: center;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+//for desktop version
+@media (min-width: 768px) {
+  .navbar-fixed-side {
+      position: fixed;
+      margin: 0 -20px;
+      height: 100vh;
+      width: 230px;
+      overflow: auto;
+      padding: 0px 20px;
+      background-color: #fafaf7;
+      border-right: solid;
+      border-width: 2px;
+      border-color: #000;
+  }
+
+  .mobile-site-title {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
 }
