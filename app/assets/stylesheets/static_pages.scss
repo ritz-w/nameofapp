@@ -289,6 +289,7 @@ body {
 
 .object-lineup{
   margin-left: -20%;
+  ;
 }
 
 
@@ -303,7 +304,7 @@ footer {
   text-transform: uppercase;
   font-family: 'Dosis', sans-serif;
   padding: 5px;
-  margin-bottom: 30px;
+  margin: 0px 0px 30px 30px;
 } 
 
 //for mobile version
@@ -348,7 +349,7 @@ footer {
   }
 
   footer {
-    text-align: center;
+  margin-left: -15%;
   }
 }
 
@@ -357,7 +358,7 @@ footer {
   .navbar-fixed-side {
       position: fixed;
       margin: 0 -20px;
-      height: 100vh;
+      height: 100%;
       width: 230px;
       overflow: auto;
       padding: 0px 20px;
@@ -365,6 +366,7 @@ footer {
       border-right: solid;
       border-width: 2px;
       border-color: #000;
+      z-index: 100;
   }
 
   .mobile-site-title {
