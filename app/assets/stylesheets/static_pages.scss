@@ -203,7 +203,6 @@ body {
 }
 
 .content-container {
-  margin-left: 206px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -215,9 +214,8 @@ body {
 .site-title {
   width: 300px;
   color: #000;
-  margin-left: 30px;
-  text-align: center;
-  text-transform: uppercase;
+  margin-left: 50px;
+  text-transform: none;
   font-weight: 900;
   text-align: left;
   letter-spacing: 3px;
@@ -234,7 +232,6 @@ body {
 
 .content-container {
   margin-left: 206px;
-  width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -243,15 +240,10 @@ body {
   padding: 10px;
 }
 
-.page-content {
-  margin-left: 206px;
-}
-
 .page-header {
   background-color: #f8f8f8;
   background-size: 100% 100%;
   width: 70%;
-  margin-left: -206px;
 }
 
 .page-header h2 {
@@ -274,6 +266,10 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 
+.page-content {
+  margin-left: 30px;
+}
+
 .cart-image {
   width: 40px;
   transform: rotate(180deg);
@@ -286,12 +282,6 @@ body {
   border-style: solid;
   margin: 10px 10px;
 }
-
-.object-lineup{
-  margin-left: -20%;
-  ;
-}
-
 
 .object-title-text {
   text-align: center;
@@ -306,6 +296,14 @@ footer {
   padding: 5px;
   margin: 0px 0px 30px 30px;
 } 
+
+//xtra large version
+@media (min-width: 992px) {
+  .col-md-4 {
+  width: 30%;
+}
+}
+
 
 //for mobile version
 @media (max-width: 768px) {
@@ -328,7 +326,6 @@ footer {
 
 .page-content {
   margin-left: -206px;
-  width: 100%;
   background-color: #f8f8f8; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
