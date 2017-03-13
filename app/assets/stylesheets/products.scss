@@ -9,14 +9,37 @@
   font-size: 1.2em;
   width: 90%;
   height: 50%;
+  table-layout: fixed;
   font-family: 'Quicksand', sans-serif;
 }
 
-//General Page Elements CSS
+table td.narrowRow, table th.narrowRow {
+  width: 80px;
+}
+
+.product_image_thumbnail {
+  width: 95%;
+}
+
+.maintext {
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.resizedColumn {
+  width: 40%;
+}
+
+.imgColumn {
+  width: 30%;
+}
+
+//General List Elements CSS
 
 th {
   font-weight: bold;
-  text-align: center;
+  text-align: left;
   border-bottom: 2px solid #000000;
 }
 
@@ -24,7 +47,22 @@ td {
   font-family: 'Quicksand', sans-serif;
   font-size: 1em;
   padding: 10px;
+  overflow-wrap: break-word;
+  text-align: left;
 }
+
+
+//Form Elements CSS
+
+.resizedTextBox {
+  width: 70%; 
+  height: 150px;
+  }
+
+.resizedField {
+  width: 70%; 
+  }
+
 
 .box_following_list {
   margin: 30px;
@@ -45,6 +83,10 @@ td {
   font-family: 'Quicksand', sans-serif;
   margin-left: 10%;
   text-align: left;
+}
+
+.product_image_show {
+  width: 30%;
 }
 
 

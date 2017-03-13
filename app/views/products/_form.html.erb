@@ -18,23 +18,28 @@
   </div>
 
   <div class="field">
-    <%= f.label :string %>
-    <%= f.text_field :string %>
+    <%= f.label :artist %>
+    <%= f.text_field :artist, class: "resizedField" %>
+  </div>
+
+    <div class="field">
+    <%= f.label :year_made %>
+    <%= f.text_field :year_made %>
   </div>
 
   <div class="field">
     <%= f.label :description %>
-    <%= f.text_field :description %>
+    <%= f.text_area :description, class: "resizedTextBox" %>
   </div>
 
   <div class="field">
     <%= f.label :text %>
-    <%= f.text_field :text %>
+    <%= f.text_area :text, class: "resizedTextBox" %>
   </div>
 
   <div class="field">
     <%= f.label :image_url %>
-    <%= f.text_field :image_url %>
+    <%= f.text_field :image_url, class: "resizedField" %>
   </div>
 
   <div class="actions">
