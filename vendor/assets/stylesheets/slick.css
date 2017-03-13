@@ -27,7 +27,7 @@
 
     .slider {
         width: calc( 100% - 100px );
-        margin: 50px;
+        margin: 50px 50px;
     }
 
     .slick-slide {
