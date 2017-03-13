@@ -19,6 +19,9 @@ table td.narrowRow, table th.narrowRow {
 
 .product_image_thumbnail {
   width: 95%;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
 }
 
 .maintext {
