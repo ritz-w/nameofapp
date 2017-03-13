@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-  resources :products
+  resources :products do
+    collection do
+      get :index
+    end
+  end
+
   get 'static_pages/about'
 
   get 'static_pages/contact'

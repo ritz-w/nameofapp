@@ -214,7 +214,6 @@ body {
 .site-title {
   width: 300px;
   color: #000;
-  margin-left: 50px;
   text-transform: none;
   font-weight: 900;
   text-align: left;
@@ -232,7 +231,7 @@ body {
 }
 
 .content-container {
-  margin-left: 206px;
+  margin-left: 20%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -357,7 +356,7 @@ footer {
       position: fixed;
       margin: 0 -20px;
       height: 100%;
-      width: 230px;
+      width: 20%;
       overflow: auto;
       padding: 0px 20px;
       background-color: #fafaf7;
