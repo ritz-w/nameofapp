@@ -3,7 +3,137 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+//landing page slider
+
+.slider2 {
+    width: calc( 100% - 100px );
+    margin: 50px 50px;
+}
+
+.slider2-container {
+  position: relative;
+}
+
+.slider2-container:hover {
+  opacity: 0.5;
+}
+
+.slider2-container:hover .dimmed-overlay {
+  opacity: 0.8;
+  background-color: red;
+
+}
+
+.slider2-container:hover .dimmed-text {
+  opacity: 1;
+}
+
+.dimmed-overlay {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: inherit;
+  height: inherit;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+
+.dimmed-text {
+  color: white;
+  font-size: 1.5vw;
+  line-height: 1.5vw;
+  text-align: center;
+  font-family: 'Dosis', helvetica;
+  margin: 20% 10%;
+  opacity: 1;
+}
+
+.artist-name-on-slider {
+  position: relative;
+  margin-bottom: 15%;
+}
+
+
 //navbar styling
+
+// normal bar
+.navbar-fixed-side .navbar-links .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+    border-bottom: 1px solid #000000;
+}
+
+.navbar-links {
+  display: block;
+}
+
+ .navbar-fixed-side .navbar-links>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #000000;
+}
+
+//icon bar
+
+
+#dropdown-icon-list {
+  font-size: 12px;
+  text-align: center;
+}
+
+#big-icon {
+  font-size: 30px;
+}
+
+.navbar-icons>li>a {
+  color: #000;
+  font-size: 12px;
+  text-align: center;
+}
+
+ .navbar-fixed-side .navbar-icons .dropdown-menu>li>a {
+    line-height: 20px;
+    color: #777;
+    font-size: 12px;
+}
+
+  .navbar-fixed-side .navbar-icons .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+    min-width: 100%;
+    text-align: center;
+
+}
+
+.navbar-icons {
+  display: none;
+  text-size: 12px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.expand-button {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5fpx;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
 
 li {
   font-family: 'Dosis', sans-serif;
@@ -33,16 +163,12 @@ li {
   }
   .navbar-fixed-side .navbar-nav {
       float: none;
-      margin: 0 -20px
+      margin: 0 -20px;
   }
   .navbar-fixed-side .navbar-nav>li {
       float: none
   }
-  .navbar-fixed-side .navbar-nav>li>a {
-      padding-top: 10px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid #000000;
-  }
+
   .navbar-fixed-side .navbar-form {
       margin: 0;
       margin-left: -15px;
@@ -59,24 +185,12 @@ li {
   .navbar-fixed-side .navbar-right {
       float: none !important
   }
-  .navbar-fixed-side .navbar-nav .dropdown-menu {
-      position: static;
-      float: none;
-      width: auto;
-      margin-top: 0;
-      background-color: transparent;
-      border: 0;
-      box-shadow: none;
-      border-bottom: 1px solid #000000;
-  }
-  .navbar-fixed-side .navbar-nav .dropdown-menu>li>a,
-  .navbar-fixed-side .navbar-nav .dropdown-menu .dropdown-header {
-      padding: 5px 15px 5px 25px
-  }
+
   .navbar-fixed-side .navbar-nav .dropdown-menu>li>a {
       line-height: 20px;
       color: #777
   }
+
   .navbar-fixed-side .navbar-nav .dropdown-menu>li>a:hover,
   .navbar-fixed-side .navbar-nav .dropdown-menu>li>a:focus {
       background-image: none
@@ -102,6 +216,7 @@ li {
       text-transform: uppercase;
       border-bottom: none;
       padding-bottom: 0
+
   }
   .navbar-fixed-side .dropdown-toggle .caret {
       display: none
@@ -123,7 +238,7 @@ li {
   }
   .navbar-fixed-side.navbar-inverse .navbar-nav .dropdown-menu>.active>a {
       background-color: #f2f2ea;
-      color: #fff
+      color: #fff;
   }
   .navbar-fixed-side.navbar-inverse .navbar-nav>li:not(.active)>a:hover,
   .navbar-fixed-side.navbar-inverse .navbar-nav>li:not(.active)>a:focus,
@@ -313,6 +428,7 @@ footer {
       border-bottom: solid;
       border-width: 2px;
       border-color: #000000;
+      width: 100%;
   }
 
   #desktop-site-title {
@@ -348,6 +464,18 @@ footer {
   footer {
   margin-left: -15%;
   }
+
+  .expand-button {
+  display: none;
+  }
+  .content-container {
+  margin-left: 40%;
+  }
+
+  .dimmed-text {
+  font-size: 2vh;
+  line-height: 2vh;
+    }
 }
 
 //for desktop version

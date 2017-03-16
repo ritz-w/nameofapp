@@ -1,3 +1,17 @@
-<h2>Featured Product:</h2>
-<%= @featured_product.name %>
-<%= image_tag(@featured_product.image_url, :class =>"product_image_thumbnail") %>
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+    <div class="page-content">
+      <div class="page-header">
+        <h2>Welcome</h2>
+          <p>The No Shop is an experimental online shop and exhibition. <br> Learn about the project and its research <a href=/static_pages/about#>here.</a></p>
+      </div>
+<section class="center slider2">
+    <% @products.each do |product| %>
+    <%= render partial: "product", locals: {product: product} %>
+  <% end %>
+</section>
+</div>
+</body>
