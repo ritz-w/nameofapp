@@ -381,9 +381,6 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 
-.page-content {
-  margin-left: 30px;
-}
 
 .cart-image {
   width: 40px;
@@ -423,12 +420,18 @@ footer {
 //for mobile version
 @media (max-width: 768px) {
   .navbar-fixed-side {
-      margin-left: -20px;
-      margin-right: -20px;
       border-bottom: solid;
       border-width: 2px;
       border-color: #000000;
       width: 100%;
+  }
+
+  .navbar-fixed-side .navbar-links > li > a {
+    border-bottom: 0px;
+  }
+
+  .navbar-fixed-side .navbar-links .dropdown-menu {
+    border-bottom: 0px;
   }
 
   #desktop-site-title {
@@ -441,7 +444,6 @@ footer {
   }
 
 .page-content {
-  margin-left: -206px;
   background-color: #f8f8f8; 
   -webkit-background-size: cover;
   -moz-background-size: cover;

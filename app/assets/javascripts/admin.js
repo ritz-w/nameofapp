@@ -46,12 +46,9 @@ $(document).ready(function(){
       window.sessionStorage.clear();
      $(".navbar-fixed-side").css("width", "100%");
      $("#toggle").css("display", "none");
-     $("#toggle").css("display", "none");
-     $(".content-container").css("margin-left", "40%");
     } else {
       $(".navbar-fixed-side").css("width", "20%");
       $("#toggle").css("display", "block");
-      $(".content-container").css("margin-left", "20%");
     }});
 
   $("#toggle").click( function(){
