@@ -1,7 +1,7 @@
 
 .slider2 {
-    width: calc( 100% - 200px );
-    margin: 50px 80px;
+    width: calc( 100% - 100px );
+    margin: 50px 40px;
 }
 
 .flex-container {
