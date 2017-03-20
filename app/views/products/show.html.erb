@@ -12,6 +12,12 @@
 </p>
 
 <p>
+  <strong>Image 2 URL:</strong><br>
+  <%= @product.img2_url %><br><br>
+  <%= image_tag(@product.img2_url, :class =>"product_image_show") %>
+</p>
+
+<p>
   <strong>Artist:</strong><br>
   <%= @product.artist %>
 </p>

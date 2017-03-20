@@ -15,11 +15,15 @@ display: flex;
 .flex-item-text {
     width: 60%;
     padding: 20px;
+    font-size: 1.4em;
+    line-height: 1.4em;
 }
 
 .title-text {
     font-weight:bold;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    line-height: 1.1em;
+    font-family: 'Quicksand', sans-serif
 }
 
 html, body {
@@ -32,7 +36,7 @@ html, body {
 }
 
 .slider {
-    width: calc( 100% - 100px );
+    width: calc( 100% - 200px );
     margin: 50px 50px;
 }
 

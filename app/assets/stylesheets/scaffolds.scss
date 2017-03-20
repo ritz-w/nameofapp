@@ -1,18 +1,22 @@
 body {
   background-color: #fff;
   color: #333;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Padauk', sans-serif;
   font-size: 1.3em;
   line-height: 18px;
   margin: 0px;
 }
 
 p, ol, ul, td {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1.2em;
-  line-height: 18px;
+  font-family: 'Padauk', sans-serif;
+  font-size: 1.4em;
+  line-height: 1.4em;
   padding: 10px;
   margin-left: 10%;
+}
+
+.dropdown-menu {
+  font-size: 1em;
 }
 
 pre {
@@ -42,7 +46,7 @@ td {
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Padauk', sans-serif;
   font-size: 0.8em;
   border-bottom: 1px solid #e1ae9e;
 

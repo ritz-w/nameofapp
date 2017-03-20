@@ -133,12 +133,13 @@
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 10px;
+    font-family: 'Dosis'
 }
 
 li {
   font-family: 'Dosis', sans-serif;
   font-color: #000;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
   .navbar-fixed-side .container,
@@ -332,6 +333,7 @@ body {
   text-transform: none;
   font-weight: 900;
   text-align: left;
+  margin-left: 5%;
   letter-spacing: 3px;
   padding: 5px;
   font-size: 2em;
@@ -359,6 +361,7 @@ body {
   background-color: #f8f8f8;
   background-size: 100% 100%;
   width: 70%;
+  margin-left: 5%;
 }
 
 .page-header h2 {
@@ -375,10 +378,11 @@ body {
 .page-header p {
   padding: 5px;
   margin-left: 30px;
-  font-size: 1.2em;
+  font-size: 1.4em;
+  line-height: 1.3em;
   margin-top: 5px;
   margin-bottom: 20px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Padauk', sans-serif;
 }
 
 
@@ -415,7 +419,6 @@ footer {
   width: 30%;
 }
 }
-
 
 //for mobile version
 @media (max-width: 768px) {
