@@ -1,31 +1,4 @@
 
-.slider2 {
-    width: calc( 100% - 100px );
-    margin: 50px 40px;
-}
-
-.flex-container {
-display: flex;
-}
-.flex-item-image{
-    width: 40%;
-    padding: 20px;
-}
-
-.flex-item-text {
-    width: 60%;
-    padding: 20px;
-    font-size: 1.4em;
-    line-height: 1.4em;
-}
-
-.title-text {
-    font-weight:bold;
-    font-size: 1.1em;
-    line-height: 1.1em;
-    font-family: 'Quicksand', sans-serif
-}
-
 html, body {
   margin: 0;
   padding: 0;
@@ -35,11 +8,6 @@ html, body {
   box-sizing: border-box;
 }
 
-.slider {
-    width: calc( 100% - 200px );
-    margin: 50px 50px;
-}
-
 .slick-slide {
   margin: 0px 10px;
   width: 15em;
@@ -47,11 +15,10 @@ html, body {
 }
 
 .img-slider {
-    width: 300px;
+    width: 15em;
 }
 
 .slick-slide img {
-  width: 100%;
 }
 
 .slick-prev:before,

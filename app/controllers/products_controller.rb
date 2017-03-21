@@ -6,11 +6,12 @@ class ProductsController < ApplicationController
   def index
     @products = Product.all
   end
-
   # GET /products/1
   # GET /products/1.json
   def show
   end
+
+  # GET /products/index_by_date
 
   # GET /products/new
   def new
@@ -28,7 +29,7 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       if @product.save
-        format.html { redirect_to @product, notice: 'Product was successfully created.' }
+        format.html { redirect_to "/static_pages/landing_page", notice: 'Product was successfully created.' }
         format.json { render :show, status: :created, location: @product }
       else
         format.html { render :new }
@@ -66,6 +67,7 @@ class ProductsController < ApplicationController
     def set_product
       @product = Product.find(params[:id])
     end
+
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params

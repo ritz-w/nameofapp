@@ -11,7 +11,15 @@ Rails.application.routes.draw do
 
   get 'static_pages/index'
 
-root 'static_pages#landing_page'
+  get 'static_pages/index_by_date'
+
+  get 'static_pages/index_by_artist'
+
+  get 'static_pages/references'
+
+  get 'static_pages/landing_page'
+
+root 'products#index'
 
 resources :orders, only: [:index, :show, :create, :destroy]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

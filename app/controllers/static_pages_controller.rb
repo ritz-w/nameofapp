@@ -3,6 +3,18 @@ class StaticPagesController < ApplicationController
   end
 
   def landing_page
-    @products = Product.limit(5)
+    @products = Product.all
   end
+
+    def index_by_date
+    @products = Product.all
+  end
+
+      def index_by_artist
+    @products = Product.all
+  end
+
+    def references
+  end
+
 end

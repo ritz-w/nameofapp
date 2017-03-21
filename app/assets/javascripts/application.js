@@ -14,5 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require admin
+//= require modernizr.custom
 //= require slick
 //= require_tree

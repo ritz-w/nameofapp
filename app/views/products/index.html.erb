@@ -8,6 +8,8 @@
         <div class = "flex-item-image">
           <%= image_tag(product.image_url, :class =>"product_image_thumbnail") %>
           <br>
+          <%= link_to 'Show', product %> / <%= link_to 'Edit', edit_product_path(product) %> / <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+          
         </div>
         <!-- /.flex-item-->
         <div class = "flex-item-text">
@@ -21,14 +23,11 @@
             <br>
           <div>
             <div>
-              <%= product.description %>
+              <%= product.description %>  
             </div>
           </div>
           <div>
               <div>
-            <div>
-            <br> <%= link_to 'Show', product %> / <%= link_to 'Edit', edit_product_path(product) %> / <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
-            </div>
           </div>
         </div>
         <!-- /.flex-item--></div>

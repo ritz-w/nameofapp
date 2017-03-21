@@ -7,6 +7,21 @@ document.addEventListener("turbolinks:load", function() {
 var docReadyJS = function() {
   //when document is ready
 $(document).ready(function(){
+  //generate random colors for overlay
+  var colors = ["#dd859e", "#f0dcc0", "#d5d5d5", "#ff426a", "#b6caf1"], c;
+
+$(".dimmed-overlay").css("backgroundColor", function(index, value) {
+    // if `index` : `0` define `c` as copy of `colors` array
+    if (!index) c = colors.slice();
+    return c.splice(Math.floor(Math.random() * c.length), 1)
+});
+
+$(".artist-name-rows").css("backgroundColor", function(index, value) {
+    // if `index` : `0` define `c` as copy of `colors` array
+    if (!index) c = colors.slice();
+    return c.splice(Math.floor(Math.random() * c.length), 1)
+})
+
   //prepare landing page slider
   $('.center').slick({
   centerMode: true,
