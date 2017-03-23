@@ -2,8 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.click-into-show-link {
+  font-family: 'Dosis', helvetica;
+  font-size: 0.5em;
+  text-decoration: underline;
+}
 
-//show each product page
+//show each product page (show.html.erb)
+
 .show-container {
   display: -ms-flex;
   display: -webkit-flex;
@@ -34,8 +40,7 @@
   line-height: 1.4em;
 }
 
-
-//by artist nav page
+//show by artist nav page
 .artist-name-container {
   margin: 5% 0;
 }
@@ -51,8 +56,7 @@
     font-size: 2em;
 }
 
-//product page slider 
-
+//product page slider (products.index)
 
 .slider {
     width: calc( 100% - 100px );
@@ -60,7 +64,7 @@
 }
 
 .flex-container {
-display: flex;
+  display: flex;
 }
 
 .flex-item-image{
@@ -71,45 +75,67 @@ display: flex;
 .flex-item-text {
   width: 60%;
   padding: 20px;
-  font-size: 1.4em;
-  line-height: 1.4em;
+}
+
+.index-desc-text {
+  white-space: pre-wrap;
   -webkit-line-clamp: 10;
   -webkit-box-orient: vertical;
   display: -webkit-box;
   max-height: 360px;
   overflow: hidden;
+  font-size: 1.4em;
+  line-height: 1.4em;
 }
 
 .title-text {
-    font-weight:bold;
-    font-size: 1.1em;
-    line-height: 1.1em;
-    font-family: 'Quicksand', sans-serif;
+  font-weight:bold;
+  font-size: 1.4em;
+  line-height: 1.4em;
+  font-family: 'Quicksand', sans-serif;
 }
 
 
-//landing page slider
+//landing page slider (landing_page.html)
 
-.slider2 {
-    width: calc( 100% - 100px );
-    margin: 50px 50px;
+.slider2-image {
+  width: 100%; 
+  border: 1px solid black;
 }
 
-.slider2-container {
+.image-lineup {
   position: relative;
+  margin: 5%;
 }
 
-.slider2-container:hover {
-  opacity: 0.5;
+.image-lineup:hover .overlay {
+  opacity: 1;
+}
+.flex-grid {
+  display: flex;
+  margin-left: 15%;
 }
 
-.slider2-container:hover .dimmed-overlay {
-  opacity: 0.8;
+@media (min-width: 992px) {
+  .col-md-6 {
+  width: 40%;
+}
+}
+
+
+.image-lineup {
+  position: relative;
+  margin: 30px auto;
+}
+
+
+.image-lineup:hover .dimmed-overlay {
+  opacity: 0.9;
   background-color: red;
 
 }
 
-.slider2-container:hover .dimmed-text {
+.image-lineup:hover .dimmed-text {
   opacity: 1;
 }
 
@@ -119,21 +145,20 @@ display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
-  width: inherit;
-  height: inherit;
+  width: 100%;
+  height: 100%;
+  border: solid 1px black;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%)
 }
 
-
 .dimmed-text {
-  color: white;
+  color: black;
   font-size: 1.5vw;
   line-height: 1.5vw;
   text-align: center;
   font-family: 'Dosis', helvetica;
   margin: 20% 10%;
-  opacity: 1;
 }
 
 .artist-name-on-slider {
@@ -141,14 +166,10 @@ display: flex;
   margin-bottom: 15%;
 }
 
-.slider2-image {
-  max-width: 100%;
-  max-height: 100%;
-}
-
 //navbar styling
 
 // normal bar
+
 .navbar-fixed-side .navbar-links .dropdown-menu {
     position: static;
     float: none;
@@ -171,7 +192,6 @@ display: flex;
 }
 
 //icon bar
-
 
 #dropdown-icon-list {
   font-size: 12px;
@@ -231,6 +251,10 @@ li {
   font-size: 0.9em;
 }
 
+#search-box {
+  text-align: center;
+  padding: 2%;
+}
   .navbar-fixed-side .container,
   .navbar-fixed-side .container-fluid {
       width: auto;

@@ -6,9 +6,15 @@
     <div>
       <div class="flex-container">
         <div class = "flex-item-image">
-          <%= image_tag(product.image_url, :class =>"product_image_thumbnail") %>
+          <%= image_tag(product.img2_url, :class =>"product_image_thumbnail") %>
           <br>
-          <%= link_to 'Show', product %> / <%= link_to 'Edit', edit_product_path(product) %> / <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+          <nav class="hover-effect cl-effect-16 click-into-show-link">
+          <%= link_to 'Click to Read More', product, :class => "click-into-show-link", :data=>{"hover" => 'Click to Read More'} %> 
+          <br> 
+          <%= link_to 'Edit', edit_product_path(product), :class => "click-into-show-link", :data=>{"hover" => 'Edit'} %> 
+          <br> 
+          <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?'}, :class => "click-into-show-link", :data=>{"hover" => 'Destroy'} %>
+          </nav>
           
         </div>
         <!-- /.flex-item-->
@@ -22,9 +28,8 @@
           </div>
             <br>
           <div>
-            <div>
-              <%= product.description %>  
-            </div>
+            <div class="index-desc-text"> <%= product.description %>
+          </div> 
           </div>
           <div>
               <div>

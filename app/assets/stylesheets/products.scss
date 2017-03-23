@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 //Product List CSS
 .product_list {
   margin: 0 auto;
@@ -79,7 +80,7 @@ td {
   font-family: 'Quicksand', sans-serif;
 }
 
-//Special Page CSS
+//Product-specific pages CSS
 .create_new_product_form {
   width: 70%;
   font-size: 1.2em;
@@ -90,6 +91,11 @@ td {
 
 .product_image_show {
   width: 30%;
+}
+
+.click-into-show-link {
+  font-family: 'Dosis', helvetica;
+  font-size: 0.5em;
 }
 
 //for mobile version

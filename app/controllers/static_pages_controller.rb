@@ -11,7 +11,7 @@ class StaticPagesController < ApplicationController
   end
 
       def index_by_artist
-    @products = Product.all
+    @products = Product.order(:artist)
   end
 
     def references

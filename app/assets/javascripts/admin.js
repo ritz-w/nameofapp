@@ -23,30 +23,30 @@ $(".artist-name-rows").css("backgroundColor", function(index, value) {
 })
 
   //prepare landing page slider
-  $('.center').slick({
-  centerMode: true,
-  centerPadding: '30px',
-  slidesToShow: 4,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '30px',
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '30px',
-        slidesToShow: 1
-      }
-    }]
-  });
+  // $('.center').slick({
+  // centerMode: true,
+  // centerPadding: '30px',
+  // slidesToShow: 3,
+  // responsive: [
+  //   {
+  //     breakpoint: 768,
+  //     settings: {
+  //       arrows: false,
+  //       centerMode: true,
+  //       centerPadding: '30px',
+  //       slidesToShow: 2
+  //     }
+  //   },
+  //   {
+  //     breakpoint: 480,
+  //     settings: {
+  //       arrows: false,
+  //       centerMode: true,
+  //       centerPadding: '30px',
+  //       slidesToShow: 1
+  //     }
+  //   }]
+  // });
   //prepare products page slider
   $('.regular').slick({
         dots: true,

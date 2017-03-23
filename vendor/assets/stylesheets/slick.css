@@ -19,8 +19,6 @@ html, body {
 }
 
 .slick-slide img {
-    max-width: 15em;
-  max-height: 20em;
 }
 
 .slick-prev:before,

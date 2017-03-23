@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,18 +9,45 @@
         <h2>Welcome</h2>
           <p>The No Shop is an experimental online shop and exhibition. <br> Learn about the project and its research <a href=/static_pages/about#>here.</a></p>
       </div>
-<section class="center slider2">
-    <% @products.each do |product| %>
-    <div class="slider2-container">
-      <%= image_tag(product.image_url, :class => "slider2-image") %>
-      <div class="dimmed-overlay">
-        <div class="dimmed-text">
-        <%= product.text %><br><br>
-        <%= product.artist %><br>
-        </div>
+
+      <div class="flex-grid">
+        <% @products.to_ary.in_groups_of(3) do |product1, product2, product3| %>
+          <div class="col-md-6">
+              <div class="image-lineup">
+                <%=image_tag(product1.image_url, :class => "slider2-image") %>
+                <%= link_to product1 do %>
+                <div class="dimmed-overlay">
+                  <div class="dimmed-text">
+                  <%= product1.text %><br><br>
+                  <%= product1.artist %><br>
+                  </div>
+                </div>
+                <% end %>
+              </div>
+              <div class="image-lineup">
+                <%=image_tag(product2.image_url, :class => "slider2-image") %>
+                <%= link_to product2 do %>
+                <div class="dimmed-overlay">
+                  <div class="dimmed-text">
+                  <%= product2.text %><br><br>
+                  <%= product2.artist %><br>
+                  </div>
+                </div>
+                <% end %>
+              </div>              
+              <div class="image-lineup">
+                <%=image_tag(product3.image_url, :class => "slider2-image") %>
+                <%= link_to product3 do %>
+                <div class="dimmed-overlay">
+                  <div class="dimmed-text">
+                  <%= product3.text %><br><br>
+                  <%= product3.artist %><br>
+                  </div>
+                </div>
+                <% end %>
+              </div>
+            </div>
+        <% end %>
       </div>
-    </div>
-  <% end %>
-</section>
 </div>
 </body>
