@@ -7,6 +7,36 @@ document.addEventListener("turbolinks:load", function() {
 var docReadyJS = function() {
   //when document is ready
 $(document).ready(function(){
+  // $("artist-name-rows").each(function() {
+  // var t,
+  //     $self = $(this),
+  //     $contentBox = $self.find('.content'),
+  //     newHeight = $contentBox.innerHeight()*3
+
+  //     $self.hover(function() {
+  //       console.log("loggingevent")
+  //       clearTimeout(t);
+  //       $contentBox.stop().animate({
+  //         'height' : newHeight
+  //       }, {
+  //         step: function() {
+  //           $contentBox.css("overflow-y", "auto");
+  //         }
+  //       });
+  //     }, function() {
+  //       clearTimeout(t);
+  //       t=setTimeout(function() {
+  //         $contentBox.stop().animate({
+  //           'height' : 100
+  //         }, {
+  //           step: function() {
+  //             $contentBox.css("overflow-y", "auto");
+  //           }
+  //         });
+  //       }, 300)
+  //     });
+  // });
+
   //generate random colors for overlay
   var colors = ["#dd859e", "#f0dcc0", "#d5d5d5", "#ff426a", "#b6caf1"], c;
 
@@ -20,33 +50,8 @@ $(".artist-name-rows").css("backgroundColor", function(index, value) {
     // if `index` : `0` define `c` as copy of `colors` array
     if (!index) c = colors.slice();
     return c.splice(Math.floor(Math.random() * c.length), 1)
-})
+});
 
-  //prepare landing page slider
-  // $('.center').slick({
-  // centerMode: true,
-  // centerPadding: '30px',
-  // slidesToShow: 3,
-  // responsive: [
-  //   {
-  //     breakpoint: 768,
-  //     settings: {
-  //       arrows: false,
-  //       centerMode: true,
-  //       centerPadding: '30px',
-  //       slidesToShow: 2
-  //     }
-  //   },
-  //   {
-  //     breakpoint: 480,
-  //     settings: {
-  //       arrows: false,
-  //       centerMode: true,
-  //       centerPadding: '30px',
-  //       slidesToShow: 1
-  //     }
-  //   }]
-  // });
   //prepare products page slider
   $('.regular').slick({
         dots: true,

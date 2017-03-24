@@ -9,10 +9,8 @@
           <%= image_tag(product.img2_url, :class =>"product_image_thumbnail") %>
           <br>
           <nav class="hover-effect cl-effect-16 click-into-show-link">
-          <%= link_to 'Click to Read More', product, :class => "click-into-show-link", :data=>{"hover" => 'Click to Read More'} %> 
-          <br> 
           <%= link_to 'Edit', edit_product_path(product), :class => "click-into-show-link", :data=>{"hover" => 'Edit'} %> 
-          <br> 
+          <br>
           <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?'}, :class => "click-into-show-link", :data=>{"hover" => 'Destroy'} %>
           </nav>
           
@@ -32,8 +30,9 @@
           </div> 
           </div>
           <div>
-              <div>
-          </div>
+            <nav class="hover-effect cl-effect-16 click-into-show-link">
+          <%= link_to '[Click to Read More]', product, :class => "click-into-show-link", :data=>{"hover" => '[Click to Read More]'} %> 
+          </nav>
         </div>
         <!-- /.flex-item--></div>
       <!--/.flex-container--></div>
