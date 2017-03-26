@@ -28,7 +28,7 @@ $(document).ready(function(){
 // Bootstrap DateTimePicker v4
   $(function() {             
    $('#datetimepicker').datetimepicker({
-         format: 'DD/MM/YYYY',        
+        format: 'YYYY-MM-DD',
     });
   });
 //Sort by Artist Name expand bio effect    
