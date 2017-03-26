@@ -7,3 +7,4 @@ class ChangeYearInProducts < ActiveRecord::Migration[5.0]
     Product.find_each { |c| c.update_attribute(:year_made, c.year_made_string) } 
     remove_column :products, :year_made_string
   end
+end
