@@ -7,9 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Dosis|Quicksand|Padauk" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
 
   <body>
@@ -33,11 +31,11 @@
                 <li> <%= link_to "Home", root_path %> <span class="sr-only"></span></a></li>
                 <li>  <%= link_to "About", static_pages_about_path %></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">View Artworks <span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">View Artworks By <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><%= link_to "By Preview", products_path, method: :get%></li>
-                    <li><%= link_to "By Artist", static_pages_index_by_artist_path%></li>
-                    <li><%= link_to "By Date", static_pages_index_by_date_path%></li>
+                    <li><%= link_to "Preview All", products_path, method: :get%></li>
+                    <li><%= link_to "Artist", static_pages_index_by_artist_path%></li>
+                    <li><%= link_to "Date", static_pages_index_by_date_path%></li>
                   </ul>
                 </li>
                 <li role="separator" class="divider"></li>

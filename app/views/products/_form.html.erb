@@ -21,10 +21,13 @@
     <%= f.label :artist %>
     <%= f.text_field :artist, class: "resizedField" %>
   </div>
-
-    <div class="field">
-    <%= f.label :year_made %>
-    <%= f.text_field :year_made %>
+    
+  <div class="field form-group">
+      <%= f.label :year_made %>
+    <div class="input-group date" id="datetimepicker">
+    <%= f.text_field :year_made, id: "datetimepicker", class: "resizedField", :data => { :provide => :datetimepicker } %>
+    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+    </div>
   </div>
 
   <div class="field">
@@ -35,6 +38,11 @@
   <div class="field">
     <%= f.label :text %>
     <%= f.text_area :text, class: "resizedTextBox" %>
+  </div>
+
+    <div class="field">
+    <%= f.label :bio %>
+    <%= f.text_area :bio, class: "resizedTextBox" %>
   </div>
 
   <div class="field">

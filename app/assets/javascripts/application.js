@@ -14,6 +14,10 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require admin
+//= require test
 //= require modernizr.custom
 //= require slick
-//= require_tree
+//= require moment
+//= require bootstrap-sprockets
+//= require bootstrap-datetimepicker
+//= require_tree .

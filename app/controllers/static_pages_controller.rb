@@ -7,7 +7,7 @@ class StaticPagesController < ApplicationController
   end
 
     def index_by_date
-    @products = Product.all
+    @products = Product.order('year_made DESC')
   end
 
       def index_by_artist

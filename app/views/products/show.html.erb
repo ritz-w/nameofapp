@@ -1,7 +1,7 @@
 <div class="show-title-text">
   <%= @product.artist %><br>
   <%= @product.name %><br>
-  <%= @product.year_made %>
+  <%= @product.year_made.strftime("%Y") %>
 </div>
 <div class="show-container">
   <div class="show-container-text">
