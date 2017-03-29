@@ -43,6 +43,19 @@
                 <li role="separator" class="divider"></li>
                 <li> <%= link_to "Contact", static_pages_contact_path %></li>
                 </li>
+                <%= form_tag("/products", method: "get") do %>
+                <row>
+                  <div class="col-lg-6">
+                    <div class="input-group">
+                        <%= text_field_tag :q, nil, placeholder: 'Search...', class: 'form-control' %>
+                        <span class="input-group-btn">
+                          <%= submit_tag("Go!", class: "btn btn-default") %>
+                        </span>
+                    </div>
+                  </div>
+                  <% end %>
+                </row>
+                  </li>
               </ul>
               <ul class="nav navbar-nav navbar-icons">
                 <li> <%= link_to "⌂", root_path, :id=>"big-icon" %> <span class="sr-only"></span></a></li>

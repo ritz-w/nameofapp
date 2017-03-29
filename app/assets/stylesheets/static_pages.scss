@@ -263,7 +263,13 @@
 
 //navbar styling
 
+
 // normal bar
+
+
+.input-group {
+  margin-top: 30%;
+}
 
 .navbar-fixed-side .navbar-links .dropdown-menu {
     position: static;
@@ -629,6 +635,12 @@ footer {
 }
 
 //for mobile version
+@media (max-width: 500px) {
+  .content-container {
+  margin-left: 0;
+  }
+}
+//for mobile version
 @media (max-width: 768px) {
   .navbar-fixed-side {
       border-bottom: solid;
@@ -678,6 +690,7 @@ footer {
   .expand-button {
   display: none;
   }
+
   .content-container {
   margin-left: 40%;
   }
