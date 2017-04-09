@@ -6,9 +6,10 @@
   <div class="page-content">
     <div class="page-header">
       <h2>Contact</h2>
-      <p> My name is Ritz, I'm the developer of this app. Please contact me if there are any problems with my app.</p>
-      <%= flash[:notice] %>
-
+      <p> My name is Ritz, I'm the developer of this app. Visit my portfolio website  <a href="http://ritz-site.bitballoon.com">here.</a></p>
+      <p>Please contact me using the form below if there are any problems with my app.</p>
+   <div class="container contact-form">
+            <%= flash[:notice] %>
 <%= form_tag("/static_pages/thank_you") do %>
 <div class="row">
   <div class="col-md-12">
@@ -26,8 +27,7 @@
     </div>      
   </div>
 </div>
-<%= submit_tag "Send" %>   
+<%= submit_tag "Send", class: "send-button" %>   
 <% end %>
-
-      <p>Visit my portfolio website  <a href="http://ritz-site.bitballoon.com">here.</a></p>
+   </div>
    </div>

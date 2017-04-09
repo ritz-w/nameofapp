@@ -3,7 +3,21 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+//contact page
+.contact-form {
+  max-width: 60%;
+  font-family: 'Dosis', helvetica;
+}
 
+.send-button {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Dosis';
+    margin: 0 30%;
+    width: 30%;
+}
 //index by date timeline page
 
 #timeline-year-left {
