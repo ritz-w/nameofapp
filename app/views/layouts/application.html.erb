@@ -92,7 +92,9 @@
     </div>
   <div class="content-container" id="mobile-content-container">
       <% if notice %>
-      <h4 class="notice alert-warning alert-dismissible" role="alert"><%= notice %></h4>
+      <h4 class="alert alert-success" role="alert"><%= notice %>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </h4>
       <% end %>
       <% if alert %>
       <h4 class="alert alert-danger" role-alert><%= alert %></h4>
