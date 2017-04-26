@@ -72,7 +72,7 @@ td {
   }
 
 .resizedField {
-  width: 70%; 
+  width: 90%; 
   }
 
 textarea.form-control {
@@ -104,6 +104,7 @@ textarea.form-control {
   width: 30%;
 }
 
+
 //for mobile version
 @media (max-width: 768px) {
   .content-container {
@@ -113,4 +114,9 @@ textarea.form-control {
     width: 100%;
     margin-left: 0;
   }
+}
+
+.notice {
+  font-family: 'Dosis';
+  margin: 5% 0%;
 }

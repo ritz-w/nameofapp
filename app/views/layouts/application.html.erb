@@ -26,6 +26,7 @@
                 <span class="icon-bar"></span>
               </button>
             </div>
+
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav navbar-links">
                 <li> <%= link_to "Home", root_path %> <span class="sr-only"></span></a></li>
@@ -43,6 +44,13 @@
                 <li role="separator" class="divider"></li>
                 <li> <%= link_to "Contact", static_pages_contact_path %></li>
                 </li>
+                <li>
+                <% if user_signed_in? %>
+                  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+                <% else %>
+                  <%= link_to('Login', new_user_session_path) %>
+                <% end %>
+                </li>
                 <%= form_tag("/products", method: "get") do %>
                 <row>
                   <div class="col-lg-6">
@@ -55,8 +63,9 @@
                   </div>
                   <% end %>
                 </row>
-                  </li>
+                </li>
               </ul>
+
               <ul class="nav navbar-nav navbar-icons">
                 <li> <%= link_to "⌂", root_path, :id=>"big-icon" %> <span class="sr-only"></span></a></li>
                 <li>  <%= link_to "ABOUT", static_pages_about_path %></li>
@@ -75,11 +84,11 @@
                 </li>
               </ul>
             </div>
-            <div><button class="expand-button isDown" id="toggle"> ⇔ MENU
-                </button></div>
-
+            <div>
+              <button class="expand-button isDown" id="toggle"> ⇔ MENU
+              </button>
+            </div>
           </nav>
-
         </div>
       </div>
     </div>
@@ -89,6 +98,8 @@
       <%= image_tag("cart.png", class: "img-responsive cart-image") %>
     </div>
     <%= yield %>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
     </div>
     <footer>
     &copy; 2017 Ritz Wu
