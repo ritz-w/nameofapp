@@ -1,0 +1,24 @@
+
+<% if signed_in? %>
+  <h4>Add a Review:</h4>
+  <%= form_for([@product, @product.comments.build]) do |f| %>
+  <div class="row">
+    <div class="col-md-12">
+      <h5><%= f.label :rating, class: "rating-label" %><br></h5>
+      <div class="rating">
+      </div>
+    </div>  
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group">
+        <h5><%= f.label :body, "Comments" %></h5>
+        <%= f.text_area :body, class: "form-control comment-text-area", placeholder: "Enter Comment" %>
+      </div>
+    </div>
+  </div>
+  <%= f.submit "Submit", class: "send-button", id: "comment-send" %>
+</div>
+            
+  <% end %>
+<% end %>

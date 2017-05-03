@@ -117,6 +117,83 @@
   line-height: 1.4em;
 }
 
+//comments section
+
+.product-reviews {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.product-reviews h4 {
+  font-family: 'Quicksand', sans serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 5%;
+}
+
+.comments-box {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.comments-box h4 {
+  font-family: 'Quicksand', sans serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.comments-box h5 {
+  font-family: 'Padauk', sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 5%;
+  margin-left: 15%;
+}
+
+.comment-text-area {
+  width: 70%;
+  margin-left: 15%;
+}
+
+.comment-entry {
+  margin: 5% auto;
+  width: 80%;
+}
+
+.rating {
+  float: left;
+  margin-top: 1%;
+  margin-left: 15%;
+}
+
+.rated {
+  margin: 3% auto;
+}
+
+.rating-label {
+  margin-top: 0%;
+  float: left;
+}
+
+#comment-send {
+  width: 15%;
+  margin-left: 40%;
+}
+hr.jagged-line {
+  height: 6px;
+  background: url(hr-12.png) repeat-x 0 0;
+  border: 0;
+  width: 90%;
+}
+
+hr.dots {
+  border-top: 1px dotted #8c8b8b;
+  width: 30%;
+}
+
+
 //show by artist nav page
 
 .artist-name-container {

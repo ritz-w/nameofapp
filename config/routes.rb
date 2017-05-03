@@ -1,14 +1,15 @@
 Rails.application.routes.draw do
-  devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout', :edit => 'edituser'}
+  devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
   resources :users
+ 
   resources :products do
-
-  get '/products/:id', to: 'products#show', as: 'product'
-
+    resources :comments
+    get '/products/:id', to: 'products#show', as: 'product'
     collection do
       get :index
     end
   end
+
 
   get 'static_pages/about'
 

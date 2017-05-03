@@ -1,11 +1,19 @@
 
 document.addEventListener("turbolinks:load", function() {
   docReadyJS();
-})
+});
 //on page load
 var docReadyJS = function() {
   //when document is ready
 $(document).ready(function(){
+//rating system
+    $('.rating').raty( { path: '/assets', scoreName: 'comment[rating]' });
+    $('.rated').raty({ path: '/assets',
+      readOnly: true,
+      score: function() {
+        return $(this).attr('data-score');
+      }
+    });
 // Sort by Date hover timeline effect
   $("#timeline-year-left, #timeline-year-right").each(function() {
     var back = ["#dd859e", "#f0dcc0", "#d5d5d5", "#ff426a", "#b6caf1"];
