@@ -149,7 +149,6 @@
   font-weight: bold;
   font-size: 1.2em;
   margin-top: 5%;
-  margin-left: 15%;
 }
 
 .comment-text-area {
@@ -193,6 +192,12 @@ hr.dots {
   width: 30%;
 }
 
+.paginate-nav {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 5%;
+}
 
 //show by artist nav page
 
@@ -721,7 +726,10 @@ footer {
   text-transform: uppercase;
   font-family: 'Dosis', sans-serif;
   padding: 5px;
-  margin-left: 50%;
+  text-align: center;
+  width: 80%;
+  margin-left: 20%;
+  padding: 7%;
 } 
 
 //xtra large version
