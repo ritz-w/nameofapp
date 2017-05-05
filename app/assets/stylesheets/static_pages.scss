@@ -129,8 +129,8 @@
   font-family: 'Quicksand', sans serif;
   font-weight: bold;
   font-size: 1.5em;
-  margin-bottom: 5%;
 }
+
 
 .comments-box {
   margin-top: 5%;
@@ -147,9 +147,6 @@
 .comments-box h5 {
   font-family: 'Padauk', sans-serif;
   font-weight: bold;
-  font-size: 1.2em;
-  margin-top: 5%;
-  margin-left: 15%;
 }
 
 .comment-text-area {
@@ -158,7 +155,7 @@
 }
 
 .comment-entry {
-  margin: 5% auto;
+  margin: 3% auto;
   width: 80%;
 }
 
@@ -190,7 +187,8 @@ hr.jagged-line {
 
 hr.dots {
   border-top: 1px dotted #8c8b8b;
-  width: 30%;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .paginate-nav {
@@ -677,8 +675,9 @@ body {
 .page-header {
   background-color: #f8f8f8;
   background-size: 100% 100%;
+  margin-left: 10%;
   width: 70%;
-  margin-left: 5%;
+  background-color: #f8f8f8; 
 }
 
 .page-header h2 {
@@ -729,7 +728,7 @@ footer {
   padding: 5px;
   text-align: center;
   width: 80%;
-  margin-left: 20%;
+  margin-left: 15%;
   padding: 7%;
 } 
 
@@ -780,12 +779,6 @@ footer {
   background-size: cover;
   min-height: 40em;
   padding: 10px;
-  }
-
-  .page-header {
-  margin-left: 0;
-  width: 100%;
-  background-color: #f8f8f8; 
   }
 
   .object-lineup{
