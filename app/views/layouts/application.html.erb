@@ -53,7 +53,7 @@
                 <row>
                   <div class="col-lg-6">
                     <div class="input-group">
-                        <%= text_field_tag :q, nil, placeholder: 'Search...', class: 'form-control' %>
+                        <%= text_field_tag :q, params[:search], placeholder: 'Search...', class: 'form-control' %>
                         <span class="input-group-btn">
                           <%= submit_tag("Go!", class: "btn btn-default") %>
                         </span>
