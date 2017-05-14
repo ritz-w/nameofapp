@@ -1,27 +1,29 @@
 require 'rails_helper'
 
 describe UsersController, :type => :controller do
-    let(:user1) { User.create!(first_name: "Taro", last_name: "Yamada", email: "yamadat@gmail.com", password: "monogatari")}
-    let(:user2) { User.create!(first_name: "Peter", last_name: "Parker", email: "peterp@gmail.com", password: "spiderman")}
+  let(:user) {FactoryGirl.create(:user)}
+  let(:user2) {FactoryGirl.create(:user2)}
 
   describe 'GET #show' do
     context 'User 1 is logged in' do
       before do
-        sign_in user1
+        sign_in user
       end
+      
       it 'loads correct user details' do
-        get :show, id: user1.id
-        expect(assigns(:user)).to eq user1
+        get :show, params: { id: user.id }
+        expect(assigns(:user)).to eq user
       end
+
       it 'cannot access User 2 details' do
-        get :show, id: user2.id
+        get :show, params: { id: user2.id }
         expect(response).to redirect_to(root_path)
       end
     end
 
     context 'No user is logged in' do
       it 'redirects to login' do
-        get :show, id: user1.id
+        get :show, params: { id: user.id }
         expect(response).to redirect_to('/login')
       end
     end
