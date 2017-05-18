@@ -12,17 +12,16 @@
           <%= link_to 'Edit', edit_product_path(product), :class => "click-into-show-link", :data=>{"hover" => 'Edit'} %> 
           <br>
           <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?'}, :class => "click-into-show-link", :data=>{"hover" => 'Destroy'} %>
-          </nav>
-          
+          </nav>   
         </div>
         <!-- /.flex-item-->
         <div class = "flex-item-text">
           <div class = "title-text">
-            <%= product.name %>
-            <br>
-            <%= product.artist %>
-            <br>
-             <%= product.year_made.strftime('%Y') %> 
+            <%= product.name %><br>
+            <%= product.artist %><br>
+            <% if product.year_made.present? %>
+              <%= product.year_made.strftime("%Y") %>
+            <% end %>
           </div>
             <br>
           <div>
