@@ -13,8 +13,8 @@
   </div>
   
   <div> 
-  <%= image_tag(@product.image_url, :class =>"product_image_show") %><br>
-  <%= image_tag(@product.img2_url, :class =>"product_image_show") %>
+  <%= image_tag(@product.image_url, :class =>"product_image_show img-zoom", :id =>"img_01", :data_zoom_image => '@product.image_url') %><br>
+  <%= image_tag(@product.img2_url, :class =>"product_image_show img-zoom", :id =>"img_01", :data_zoom_image => '@product.img2_url') %>
   </div>
 </div>
 

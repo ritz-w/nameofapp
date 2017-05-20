@@ -6,6 +6,15 @@ document.addEventListener("turbolinks:load", function() {
 var docReadyJS = function() {
   //when document is ready
 $(document).ready(function(){
+//elevate zoom
+    $('.img-zoom').elevateZoom({
+      zoomType: "lens",
+      constrainType:"height", 
+      constrainSize:274,
+      cursor: "crosshair",
+      zoomWindowFadeIn: 500,
+      zoomWindowFadeOut: 750
+      });
 //rating system
     $('.rating').raty( { path: '/assets', scoreName: 'comment[rating]' });
     $('.rated').raty({ path: '/assets',
