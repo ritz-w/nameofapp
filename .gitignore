@@ -20,5 +20,5 @@
 # Ignore Byebug command history file.
 .byebug_history
 
-# Ignore application configuration
-/config/application.yml
+# I don’t want to show my secrets
+/config/secrets.yml
