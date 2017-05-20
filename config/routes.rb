@@ -2,10 +2,7 @@ Rails.application.routes.draw do
   devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}, :controllers => { :registrations => "user_registrations" }
   resources :users
  
-  
   post 'payments/create' => 'payments#create'
-  get 'payments/create' => 'payments#create'
-
 
   resources :products do
     resources :comments

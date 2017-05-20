@@ -2,7 +2,8 @@
   <%= @product.artist %><br>
   <%= @product.name %><br>
   <% if @product.year_made.present? %>
-   <%= @product.year_made.strftime("%Y") %>
+   <%= @product.year_made.strftime("%Y") %><br>
+   $ <%= @product.price %>
   <% end %>
 </div>
 
