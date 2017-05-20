@@ -1,6 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
+  config.force_ssl = true
 # SendGrid
   config.action_mailer.default_url_options = { host: 'https://noshop.herokuapp.com' }  
   config.action_mailer.delivery_method = :smtp

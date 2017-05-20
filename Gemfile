@@ -42,6 +42,7 @@ gem 'rails-controller-testing'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'rails-controller-testing'
+gem 'figaro'
 
 group :production do
   gem 'pg'
