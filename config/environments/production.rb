@@ -1,5 +1,15 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
+  #Dalli/Memcached
+  config.cache_store = :dalli_store,
+                    (ENV["MEMCACHIER_SERVERS"] || "").split(","),
+                    {:username => ENV["MEMCACHIER_USERNAME"],
+                     :password => ENV["MEMCACHIER_PASSWORD"],
+                     :failover => true,
+                     :socket_timeout => 1.5,
+                     :socket_failure_delay => 0.2,
+                     :down_retry_delay => 60
+                    }
 # SendGrid
   config.action_mailer.default_url_options = { host: 'https://noshop.herokuapp.com' }  
   config.action_mailer.delivery_method = :smtp

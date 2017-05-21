@@ -17,9 +17,9 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
-    @comments = @product.comments.order("created_at DESC")
-    @comments = Comment.all.paginate(page: params[:page], per_page: 2)
     @products = Product.all
+    @comments = @product.comments
+    @comments = Comment.all.paginate(page: params[:page], per_page: 3)
   end
 
   # GET /products/index_by_date
@@ -94,6 +94,6 @@ def create
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :artist, :description, :text, :image_url, :year_made, :img2_url, :bio)
+      params.require(:product).permit(:name, :artist, :price, :description, :text, :image_url, :year_made, :img2_url, :bio)
     end
 end

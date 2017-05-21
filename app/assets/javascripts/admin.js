@@ -101,7 +101,7 @@ $(".artist-name-rows").css("backgroundColor", function(index, value) {
 
   //prepare products page slider
   $('.regular').slick({
-        dots: true,
+        dots: false,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
