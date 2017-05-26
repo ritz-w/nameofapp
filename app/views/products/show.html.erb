@@ -4,12 +4,14 @@
   <% if @product.year_made.present? %>
    <%= @product.year_made.strftime("%Y") %><br>
    $ <%= @product.price %>
+    <span class="badge">
+      Viewed <%= @product.viewed! %> times
+    </span>
   <% end %>
 </div>
 
 <div class="show-container">
   <div class="show-container-text">
-    <%= @product.views %>
     <%= @product.description %>
   </div>
   
