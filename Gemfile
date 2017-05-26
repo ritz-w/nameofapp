@@ -43,6 +43,8 @@ gem 'rails-controller-testing'
 # gem 'capistrano-rails', group: :development
 gem 'rails-controller-testing'
 gem 'dalli'
+gem 'redis-rails'
+gem 'newrelic_rpm'
 
 group :production do
   gem 'pg'
