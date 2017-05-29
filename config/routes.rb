@@ -1,13 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}, :controllers => { :registrations => "user_registrations" }
   resources :users
-  mount ActionCable.server => '/cable'
  
   post 'payments/create' => 'payments#create'
 
   resources :products do
     resources :comments
-    get '/products/:id', to: 'products#show', as: 'product'
     collection do
       get :index
     end

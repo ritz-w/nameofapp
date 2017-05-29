@@ -11,7 +11,7 @@
 </div>
 
 <div class="show-container">
-  <div class="show-container-text" data-product-id="<%= @product.id %>">
+  <div class="show-container-text">
     <%= @product.description %>
   </div>
   
@@ -31,10 +31,10 @@
   <button class="btn btn-default"><%= link_to 'Back', products_path, method: :get %></button>
 </div>
 
-<div class="comments-box">
 <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
-  <%= render 'new_comment', product: @product %>
-  <%= render 'comments', product: @product %>
+<div class="comments-box row">
+  <%= render 'new_comment', product: @product.id %>
+  <%= render 'comments' %>
 </div>
 
 
