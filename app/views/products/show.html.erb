@@ -32,7 +32,7 @@
 </div>
 
 <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
-<div class="comments-box row" data-product-id="<%= @product.id %>">
+<div class="comments-box" data-product-id="<%= @product.id %>">
   <%= render 'new_comment', product: @product.id %>
   <%= render 'comments' %>
 </div>
