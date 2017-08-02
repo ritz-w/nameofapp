@@ -21,6 +21,7 @@ describe UsersController, :type => :controller do
       end
     end
 
+
     context 'No user is logged in' do
       it 'redirects to login' do
         get :show, params: { id: user.id }

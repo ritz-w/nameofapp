@@ -10,8 +10,6 @@ describe Product do
     FactoryGirl.create(:comment, product: @product, user: @user)
     FactoryGirl.create(:comment, rating: 1, product: @product, user: @user)
     FactoryGirl.create(:comment, rating: 5, product: @product, user: @user)
-
-
     expect(@product.average_rating).to eq 3
   end
 
