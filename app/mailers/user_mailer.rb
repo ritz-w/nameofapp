@@ -8,9 +8,14 @@ class UserMailer < ApplicationMailer
   end
 
   def welcome(user)
-  @appname = "No Shop"
-  mail( :to => user.email,
-        :subject => "Welcome to #{@appname}!")
-end
+    @appname = "No Shop"
+    mail(to: user.email, subject: "Welcome to #{@appname}!")
+  end
+
+  def payment_confirmation(user, product)
+    @user = user
+    @product = product
+    mail(to: user.email, subject: "Payment Confirmation")
+  end
 
 end

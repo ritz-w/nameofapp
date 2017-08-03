@@ -3,6 +3,34 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+//tables
+.admin-table {
+  font-family: 'Dosis';
+  font-size: 14px;
+}
+
+.admin-table-within {
+  font-family: 'Dosis';
+  font-size: 12px;
+  width: 80%;
+  font-family: 'Dosis';
+  font-size: 12px;
+  width: 80%;
+}
+
+
+.admin-table-within tr {
+  max-width: 10%;
+  font-family: 'Dosis';
+  font-size: 20px;
+}
+
+.panel-group .panel {
+  width: 70%;
+  font-size: 1.5em;
+  font-family: 'Dosis';
+}
+
 //contact page
 .contact-form {
   max-width: 60%;
